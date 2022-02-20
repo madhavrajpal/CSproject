@@ -1,0 +1,536 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true"> 
+  <link rel="shortcut icon" type="image/png" href="./favicon.png">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Rename Dirs | Home</title>
+  <style type="text/css">
+    body { margin:0; }
+  </style>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    #header {
+      background-color: white;
+      width: 100%;
+      height: 50px;
+      border: 10px;
+      background-attachment: fixed;
+    }
+  </style>
+  <style>
+    #landing {
+      background-image: url(./bgfin.jpg);
+      width: 100%;
+      height: 600px;
+      margin: 0px;
+      background-position: center;
+      background-size: cover;
+      background-color:black;
+      background-attachment: relative;
+
+      
+
+    }
+  </style>
+  <style>
+    #research {
+      background-color: black;
+      width: 100%;
+      
+      border: 10px;
+      background-attachment: fixed;
+    }
+  </style>
+  <style>
+    #research2 {
+      background-color: black;
+      width: 100%;
+      
+      border: 10px;
+      background-attachment: fixed;
+    }
+  </style>
+  <style>
+    #vid {
+      background-color: white;
+      width: 100%;
+      
+      border: 10px;
+      background-attachment: fixed;
+    }
+  </style>
+  <style>
+    #team {
+      background-color: white;
+      width: 100%;
+      
+      border: 10px;
+      background-attachment: fixed;
+    }
+  </style>
+  <style>
+    ul {
+      margin: 5px;
+      padding: 10px;
+      list-style: none;
+      display: table;
+      width: 60px;
+      text-align: right;
+      float: right;
+    }
+
+    li {
+      display: table-cell;
+      position: relative;
+      padding: 10px;
+      text-align: right;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+
+    a {
+      color: black;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.15em;
+
+      display: table-row;
+      padding: 10px;
+      position: relative;
+    }
+
+    a:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+
+      background: black;
+      transition: width 0.5s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+
+    a:hover:after {
+      width: 100%;
+      left: 0;
+
+    }
+  </style>
+  <style>
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: gray;
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 60px;
+      width: 60px;
+      height: 60px;
+    }
+
+    #myBtn:hover {
+      background-color: darkgrey;
+    }
+  </style>
+  <style>
+    #footer {
+      background-color: grey;
+      text-align: center;
+      width: 100%;
+      height: 40px;
+    }
+  </style>
+  <style>
+    footer {
+      color: white;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: black;
+      font-size: 18px;
+      bottom: 0rem;
+      position: relative;
+      
+    }
+  </style>
+  <style>
+    .fade-in {
+      animation: fadeIn ease 2s;
+      -webkit-animation: fadeIn ease 2s;
+      -moz-animation: fadeIn ease 2s;
+      -o-animation: fadeIn ease 2s;
+      -ms-animation: fadeIn ease 2s;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-moz-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-o-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-ms-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  <style>
+    /*#subs{
+        background-color: black;
+        border-radius: 60px;
+        width: 300px;
+        height: 100px;
+        color: white;
+        text-align: center;
+        margin: 10px;
+        
+        display:inline-block;
+        align-content: center;
+        box-shadow: 5px 10px grey;
+        
+        
+        
+        
+        
+    }*/
+  </style>
+  <style>
+    /*.grow {
+      color: black;
+      padding: 5px 5px 5px 5px;
+      border-radius: 50px;
+      height: 100px;
+      width: 300px;
+      margin: 5px 1% 5px 1%;
+      margin-top: 15px;
+      position: relative;
+      transition: height 0.5s;
+      -webkit-transition: height 0.5s;
+      text-align: center;
+      background-color: white;
+      display: inline-block;
+      box-shadow: 5px 10px grey;
+
+    }
+
+    .grow:hover {
+      height: 110px;
+    }*/
+  </style>
+<style>
+  
+  #front {
+  position: relative;
+  margin: 5px 1% 5px 1%;
+  margin-top: 15px;
+  width: 315px;
+  height: 130px;
+  z-index: 1;
+  border-radius: 0px;
+  display: inline-block;
+  background-color: white;
+  box-shadow:  4px 4px black;
+}
+ #front {
+  perspective: 1000;
+}
+#front_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.2s linear;
+  background-color: white;
+}
+#front:hover #front_card {
+  transform: rotateY(180deg);
+  box-shadow:  5px 5px black;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: white;
+  color: black;
+  width: 300px;
+  height: 100px;
+  border-radius: 50px;
+  
+}
+
+</style>
+<style>
+  #photos{
+    background-color: black;
+    width: 185px;
+    height: 250px;
+    display: inline-block;
+    margin: 10px;
+    transition: transform .2s;
+    
+  }
+</style>
+<style>
+  #photos:hover{
+    
+     transform: scale(1.05);
+      
+  }
+</style>
+
+<body><button onclick="topFunction()" id="myBtn" title="Go to top">
+    <font size=8 style="padding: 0px;margin-top: 5px;">^</font><br>
+  </button>
+  <div id='header'>
+    <img src="./proj.jpg" style="float:inline-start; height:35px; padding:10px;margin-top: 9px;margin-left: 13px;">
+    <ul>
+      <li><a href='#vid'>ABOUT</a></li>
+      <li><a href='#research'>EXAMPLES
+      </a></li>
+      <li><a href='#research2'>TUTORIAL</a></li>
+    </ul>
+  </div>
+  <br>
+  <div class="fade-in" id="landing" data-aos="fade-up"></div>
+  <br>
+  <br>
+  <div class="fade-in" id="vid">
+    <br>
+    <center>
+      <h1 style="font-family: Arial, Helvetica, sans-serif;color: black;" data-aos="fade-up">ABOUT RENAME DIRS</h1>
+    </center>
+    <center><img src="./line - Copy.png" style="width: 200px;height: 20px;" data-aos="fade-up"> </center>
+    <br>
+    <div data-aos="fade-up"><p style="color: black;" data-aos="fade-up"><center><font style="font-family: Arial, Helvetica, sans-serif;font-size:26px;" data-aos="fade-up"><br>RENAME DIRS is a python script to rename multiple directories in a uniform format.<br>We allow people to easily rename multiple files in a uniform manner, <br>and also give the option to revert back to the previous version of the file name.</font></center></p></div>
+    <br>
+    <br>
+  </div>
+  <br>
+  <div class="fade-in" id="research">
+    <br>
+    <center>
+      <h1 style="font-family: Arial, Helvetica, sans-serif;color: white;" data-aos="fade-up">EXAMPLES</h1>
+      <p style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;color: aliceblue;" data-aos="fade-up">(Hover to see changes)</p>
+    </center>
+    <br>
+    <center><img src="./line.png" style="width: 200px;height: 2px;" data-aos="fade-up"> </center>
+    <br>
+    <center>
+      <div id="front" data-aos="fade-up">
+        <div id="front_card" class="shadow" onclick="window.location='./history.html'">
+          <div class="front face">
+           <p style="font-family: Arial, Helvetica, sans-serif;font-size: 15px;font-weight: bold">BEFORE</p>
+           <hr>
+           <p style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;color: black;">REnaMe dIrS</p>
+          </div>
+          <div class="back face center">
+            <p style="font-family: Arial, Helvetica, sans-serif;font-size: 19px;font-weight: bold;">Example File.txt</p>
+          </div>
+        </div>
+      </div>
+      <div id="front" data-aos="fade-up">
+        <div id="front_card" class="shadow" onclick="window.location='./status.html'">
+          <div class="front face">
+           <p style="font-family: Arial, Helvetica, sans-serif;font-size: 15px;font-weight: bold;">BEFORE</p>
+           <hr>
+           <p style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;color: black;">REnaMe dIrS</p>
+          </div>
+          <div class="back face center">
+            <p style="font-family: Arial, Helvetica, sans-serif;font-size: 19px;font-weight: bold;">example_file.txt</p>
+          </div>
+        </div>
+      </div>
+      <div id="front" data-aos="fade-up">
+        <div id="front_card" class="shadow" onclick="window.location='./pros.html'">
+          <div class="front face">
+           <p style="font-family: Arial, Helvetica, sans-serif;font-size: 15px;font-weight: bold;">BEFORE</p>
+           <hr>
+           <p style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;color: black;">REnaMe dIrS</p>
+          </div>
+          <div class="back face center">
+            <p style="font-family: Arial, Helvetica, sans-serif;font-size:19px;font-weight: bold;">Example-file.txt</p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div id="front" data-aos="fade-up">
+        <div id="front_card" class="shadow" onclick="window.location='./legal.html'">
+          <div class="front face">
+           <p style="font-family: Arial, Helvetica, sans-serif;font-size: 15px;font-weight: bold;">BEFORE</p>
+           <hr>
+           <p style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;color: black;">REnaMe dIrS </p>
+          </div>
+          <div class="back face center">
+            <p style="font-family: Arial, Helvetica, sans-serif;font-size: 19px;font-weight: bold;">Example_File.txt</p>
+          </div>
+        </div>
+      </div>
+      <div id="front" data-aos="fade-up">
+        <div id="front_card" class="shadow" onclick="window.location='./culture.html'">
+          <div class="front face">
+           <p style="font-family: Arial, Helvetica, sans-serif;font-size: 15px;font-weight: bold;">BEFORE</p>
+           <hr>
+           <p style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;color: black;">REnaMe dIrS</p>
+          </div>
+          <div class="back face center">
+            <p style="font-family: Arial, Helvetica, sans-serif;font-size: 19px;font-weight: bold;">example file.txt</p>
+          </div>
+        </div>
+      </div>
+      <div id="front" data-aos="fade-up">
+        <div id="front_card" class="shadow" onclick="window.location='./survey.html'">
+          <div class="front face">
+           <p style="font-family: Arial, Helvetica, sans-serif;font-size: 15px;font-weight: bold;">BEFORE</p>
+           <hr>
+           <p style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;color: black;">REnaMe dIrS</p>
+          </div>
+          <div class="back face center">
+            <p style="font-family: Arial, Helvetica, sans-serif;font-size: 19px;font-weight: bold;">example-file.txt</p>
+          </div>
+        </div>
+      </div>
+    </center>
+    <br>
+    <br>
+  </div>
+  <div class="fade-in" id="vid">
+    <br>
+    <center>
+      <h1 style="font-family: Arial, Helvetica, sans-serif;color: black;" data-aos="fade-up">WHY RENAME DIRS</h1>
+    </center>
+    <center><img src="./line.png" style="width: 200px;height: 20px;" data-aos="fade-up"> </center>
+    
+    <div data-aos="fade-up"><p style="color: black;" data-aos="fade-up"><center><font style="font-family: Arial, Helvetica, sans-serif;font-size:26px;" data-aos="fade-up"><br>We personally like our files to be arranged in a perfect and neat manner with a specific format.<BR> But, sometimes during intense competitions, we end up saving the files in a random format. <BR>Inspired by our personal problem, we have created RENAME DIRS to make the process quicker and easier.
+    </font></center></p></div>
+    <br>
+    <br>
+  </div>
+  <BR>
+  <BR>
+    <div class="fade-in" id="research2">
+      <BR>
+      
+        <center>
+          <h1 style="font-family: Arial, Helvetica, sans-serif;color: white;" data-aos="fade-up">TUTORIAL</h1>
+        </center>
+        <center><img src="./line.png" style="width: 200px;height: 3px;" > </center>
+        <br>
+        <center>
+          <p style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;color: white;" >After installing, run rename-dirs
+          <br>Enter directory path:</p>
+          
+          <img src="./1.png" style="height: 700px;width: 1000px;">
+          <br>
+          <p style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;color: white;" >Choose file name format:</p>
+          <img src="./2.png" style="height: 700px;width: 1000px;">
+            <br>
+          <p style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;color: white;" >Enter Y/n for each file/folder:</p>
+          <img src="./3.png" style="height: 700px;width: 1000px;">
+            <br>
+          <p style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;color: white;" >Initial folder structure:</p>
+          <img src="./4.png" style="height: 400px;width: 1000px;">
+            <br>
+          <p style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;color: white;" >Final folder structure:</p>
+          <img src="./5.png" style="height: 400px;width: 1000px;">
+
+        </center>
+        <br>
+    </div>
+
+      
+  <BR>
+  <BR>
+  <footer>
+    <small>©️ Developed by Madhav Rajpal • Rachit Gupta</small>
+  </footer>
+</body>
+</head>
+<script>
+
+  var mybutton = document.getElementById("myBtn");
+
+
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration : 1000,
+      });
+
+    </script>
+    </html>
